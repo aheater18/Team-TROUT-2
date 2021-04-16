@@ -5,7 +5,7 @@
 			<value>Zombie Noises</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{0c878b79-23ed-4bd0-8aba-44dc3e3769bd}</destination>
@@ -155,7 +155,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{6218085f-4f3f-471e-ada3-2e5d049464de}">
 		<property name="volume">
-			<value>-16</value>
+			<value>-26.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -244,6 +244,7 @@
 	<object class="MixerBusEffectChain" id="{787e0c84-cfc5-4047-96bf-012be9c98cda}">
 		<relationship name="effects">
 			<destination>{ea2b888b-aa93-4dab-a182-7d897b719413}</destination>
+			<destination>{d4d561bb-d781-4d9c-beae-19fd9660b4ab}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3605db53-3850-4edb-bcf8-5057427a2334}" />
@@ -297,5 +298,10 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{ea2b888b-aa93-4dab-a182-7d897b719413}" />
+	<object class="SpatialiserEffect" id="{d4d561bb-d781-4d9c-beae-19fd9660b4ab}">
+		<property name="maximumDistance">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{2d84cf60-2b30-452f-ab6d-2205feb21431}" />
 </objects>

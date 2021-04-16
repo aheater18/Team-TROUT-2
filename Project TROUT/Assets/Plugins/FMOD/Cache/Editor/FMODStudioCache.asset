@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FMOD/Project TROUT/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637523095760632354
+  lastModified: 637539345604557092
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -42,7 +42,7 @@ MonoBehaviour:
   - {fileID: -2655627327399489288}
   StringsBanks:
   - {fileID: 7947170237278496448}
-  stringsBankWriteTime: 637523095760662429
+  stringsBankWriteTime: 637539345604577106
   cacheVersion: 6
 --- !u!114 &4610345074223806532
 MonoBehaviour:
@@ -61,11 +61,11 @@ MonoBehaviour:
   Banks:
   - {fileID: -2655627327399489288}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
+  MinDistance: 1
+  MaxDistance: 100
   Length: 5920
 --- !u!114 &4981667535188256440
 MonoBehaviour:
@@ -105,7 +105,7 @@ MonoBehaviour:
   Path: FMOD/Project TROUT/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637523095760662429
+  lastModified: 637539345604577106
   LoadResult: 0
   FileSizes:
   - Name: Desktop

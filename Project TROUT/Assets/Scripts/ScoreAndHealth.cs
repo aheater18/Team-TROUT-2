@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScoreAndHealth : MonoBehaviour
 {
 	public Text score;
-	private int points = 0;
+	public int points = 0;
 
     public int Points
     {

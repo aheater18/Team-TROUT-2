@@ -13,6 +13,7 @@ public class ZombieMovement : MonoBehaviour
 	{
 		zombieAgent = this.GetComponent<NavMeshAgent>();
 		playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
+
 	}
 
 	void Update()
@@ -21,32 +22,3 @@ public class ZombieMovement : MonoBehaviour
 		zombieAgent.SetDestination(target);
 	}
 }
-
-/*
-Legacy code
-public class ZombieMovement : MonoBehaviour
-{
-	public Transform playerPosition;
-	public float minSpeed = 1.0f;
-	public float maxSpeed = 1.0f;
-	private float speed = 1.0f;
-	private float rotationSpeed = 3.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-		playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
-		speed = Random.Range(minSpeed, maxSpeed);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-		//Look at player
-		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(playerPosition.position - 
-		transform.position), rotationSpeed * Time.deltaTime);
-		
-		//Move to player
-		transform.position += transform.forward * speed * Time.deltaTime;
-    }
-}
-*/

@@ -11,10 +11,10 @@ public class Shoot : MonoBehaviour
     [SerializeField] private float damage = 1f;
 
     // How long the bullet trail is on the screen
-    private WaitForSeconds shotDuration = new WaitForSeconds(0.07f);
+    protected WaitForSeconds shotDuration = new WaitForSeconds(0.07f);
     // Bullet trail
-    private LineRenderer laserLine;
-    private float nextFire;
+    protected LineRenderer laserLine;
+    protected float nextFire;
 
     // Start is called before the first frame update
     void Start()
@@ -50,8 +50,13 @@ public class Shoot : MonoBehaviour
                 laserLine.SetPosition(1, hit.point);
                 if (hit.transform.GetComponent<MortalEntity>())
                 {
+                    //Add 10 points for any hit on an enemy
                     hit.transform.GetComponent<MortalEntity>().Health -= this.damage;
-                    GetComponent<ScoreAndHealth>().Points += 20;
+                    GetComponent<ScoreAndHealth>().Points += 10;
+
+                    //Make it 100 points if that enemy dies
+                    if (hit.transform.GetComponent<MortalEntity>().Health <= 0)
+                        GetComponent<ScoreAndHealth>().Points += 90;
                 }
             }
             else

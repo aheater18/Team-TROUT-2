@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -22,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (currentHP <= 0) 
         {
-            Destroy(this.gameObject);
+            SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
         }
 
         if (hpRegan && maxHP != currentHP) 

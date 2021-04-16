@@ -6,10 +6,11 @@ using UnityEngine;
 
 public class MortalEntity : MonoBehaviour
 {
-    [SerializeField] private float currentHP = 5;
+    [SerializeField] public float currentHP = 5;
     [SerializeField] private float maxHP = 5;
     [SerializeField] private float damage = 1;
 	private List<GameObject> spawnerList;
+    private PowerUpGen powerUpGenScript;
 
     public float Health
     {
@@ -21,6 +22,7 @@ public class MortalEntity : MonoBehaviour
     void Start()
     {
         spawnerList = GameObject.Find("Game Manager").GetComponent<EnemySpawner>().enemyList;
+        powerUpGenScript = GameObject.Find("Game Manager").GetComponent<PowerUpGen>();
     }
 
     // Update is called once per frame
@@ -28,7 +30,8 @@ public class MortalEntity : MonoBehaviour
     {
         if(currentHP <= 0)
         {
-			spawnerList.Remove(this.gameObject);
+            powerUpGenScript.GeneratePowerUp(this.transform);
+            spawnerList.Remove(this.gameObject);
             GameObject.Destroy(this.gameObject);
         }
     }
