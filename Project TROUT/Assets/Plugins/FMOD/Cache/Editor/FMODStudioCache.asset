@@ -177,6 +177,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 692
+--- !u!114 &-4399233355471951385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MainMenu Music
+  m_EditorClassIdentifier: 
+  Path: event:/MainMenu Music
+  guid: f170b2f72a860941afaf772952bc869b
+  Banks:
+  - {fileID: -2655627327399489288}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 100000
 --- !u!114 &-3654915203883401161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,8 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Main-Menu Music
   guid: f170b2f72a860941afaf772952bc869b
-  Banks:
-  - {fileID: -2655627327399489288}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -215,7 +237,7 @@ MonoBehaviour:
   Path: FMOD/Project TROUT/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637561974138377220
+  lastModified: 637561997450099451
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -289,17 +311,17 @@ MonoBehaviour:
   - {fileID: 1536912422298363803}
   - {fileID: -8864254636226499290}
   - {fileID: -5694967059886266265}
-  - {fileID: -3654915203883401161}
   - {fileID: 18249171561305542}
   - {fileID: 5161941743502976972}
   - {fileID: -1532812880842631423}
   - {fileID: -8008342096047907554}
+  - {fileID: -4399233355471951385}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2655627327399489288}
   StringsBanks:
   - {fileID: 7947170237278496448}
-  stringsBankWriteTime: 637561974138407151
+  stringsBankWriteTime: 637561997450129371
   cacheVersion: 6
 --- !u!114 &18249171561305542
 MonoBehaviour:
@@ -343,6 +365,26 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
+  Exists: 1
+--- !u!114 &1319135527757504581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ZombiesLeft
+  m_EditorClassIdentifier: 
+  Name: ZombiesLeft
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 151696605
+    data2: 627665411
   Exists: 1
 --- !u!114 &1536912422298363803
 MonoBehaviour:
@@ -573,9 +615,9 @@ MonoBehaviour:
   Path: FMOD/Project TROUT/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637561974138407151
+  lastModified: 637561997450129371
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1344
+    Value: 1396
   Exists: 1

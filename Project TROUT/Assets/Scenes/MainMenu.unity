@@ -657,7 +657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Main-Menu Music
+  Event: event:/MainMenu Music
   PlayEvent: 11
   StopEvent: 12
   AllowFadeout: 1
