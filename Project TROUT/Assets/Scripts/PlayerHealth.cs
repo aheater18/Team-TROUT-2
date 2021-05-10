@@ -12,69 +12,77 @@ public class PlayerHealth : MonoBehaviour
     private float maxHP = 5;
     private float damage = 1;
     private float timeTillNextAttack = 1.0f;
-    private float nextAttack;
-    public bool hpRegan = false;
-    private WaitForSeconds healthRegan = new WaitForSeconds(3.0f);
+    private float nextAttack = 1.0f;
+    public bool hpRegain = false;
+    public float timeToStartRegain = 8.0f;
+    private float startTimer = 0.0f;
+    public float timeBetweenRegain = 1.0f;
+    private float betweenTimer = 0.0f;
     void Start()
     {
-        
+        health = GameObject.Find("Health").GetComponent<Text>();
     }
 
     void Update()
     {
+       
         if (currentHP <= 0) 
         {
             SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
         }
 
-        if (hpRegan && maxHP != currentHP) 
+        if (hpRegain && maxHP != currentHP)
         {
-            StartCoroutine(Regan());
+            // I replaced the Coroutine with this timer to allow me to have a time between each hp regan so it was instant, the Coroutine wasn't working
+            // for me
+            startTimer += Time.deltaTime;
+            if (startTimer >= timeToStartRegain)
+            {
+                betweenTimer += Time.deltaTime;
+                if (betweenTimer >= timeBetweenRegain) 
+                {
+                    currentHP++;
+                    betweenTimer %= timeBetweenRegain;
+                }
+            }
         }
 
+
         if (currentHP == maxHP) {
-            hpRegan = false;
+            hpRegain = false;
+            startTimer = 0;
+            betweenTimer = 0;
         }
 
         health.text = "Health: " + currentHP;
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.tag == "Enemy")
-    //    {
-    //        hpRegan = false;
-    //        currentHP -= damage;
-    //        Debug.Log(currentHP);
-    //    }
-    //}
-
-    private void OnCollisionStay(Collision collision)
+    private void OnTriggerStay(Collider collision)
     {
-        if (collision.gameObject.tag == "Enemy" && Time.time > nextAttack)
+        if (collision.gameObject.tag == "Enemy")
         {
-            hpRegan = false;
-            nextAttack = Time.time + timeTillNextAttack; 
-            currentHP -= damage;
-            Debug.Log(currentHP);
+            nextAttack += Time.deltaTime; 
+            if (nextAttack >= timeTillNextAttack)
+            {
+                hpRegain = false;
+                startTimer = 0;
+                betweenTimer = 0;
+                nextAttack = 0;
+                currentHP -= damage;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Hurt");
+                //Debug.Log(currentHP);
+            }
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider collision)
     {
 
         if (collision.gameObject.tag == "Enemy" && currentHP != maxHP)
         {
-            hpRegan = true;           
+            hpRegain = true;
+            nextAttack = 1; 
         }
     }
 
-    private IEnumerator Regan() 
-    {
-        yield return healthRegan;
-        if (currentHP != maxHP)
-        {
-            currentHP++;
-        }
-    }
 }

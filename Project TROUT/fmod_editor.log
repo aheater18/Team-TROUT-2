@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002043C79FD68 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001F1D0419768 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,28 +18,194 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 67520
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5088
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1322240
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 18944
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000DF7428F478
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000565A3BF3D8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD67F67B10
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD67F67AE0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD67F67BE0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD67F67CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002020A1D7EF8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBB03F7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBB03F7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBB03F7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBB03F7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F1C41D5EB8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='369781__morganpurkis__silenced-gunshot', format=5, channels=2, frequency=48000, lengthbytes=7296, lengthpcm=31820, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.511105.
-[LOG] SoundI::release                          :  (000002043D123638)
-[LOG] SoundI::release                          :     163439__under7dude__zombie-2 (000002043B4291B8)
-[LOG] SoundI::release                          :  (000002043D1237A8)
-[LOG] SoundI::release                          :     445983__breviceps__zombie-gargles (000002043B429B78)
-[LOG] SoundI::release                          :  (000002043D125D08)
-[LOG] SoundI::release                          :     555414__tonsil5__zombie-growl-3 (000002043B428B38)
-[LOG] SoundI::release                          :  (0000020207A1A2D8)
-[LOG] SoundI::release                          :     369781__morganpurkis__silenced-gunshot (000002043DB09218)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1322240
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 18944
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000565A3BF3D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBB03F7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBB03F7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBB03F7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBB03F7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F1C41D5EB8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bullet Ricochet 4', format=5, channels=2, frequency=48000, lengthbytes=6400, lengthpcm=36122, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.768212.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1322240
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 18944
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000565A3BF3D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBB03F7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBB03F7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBB03F7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBB03F7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F1C41D5EB8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bullet Ricochet 1', format=5, channels=2, frequency=48000, lengthbytes=4896, lengthpcm=25610, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.774382.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1322240
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 18944
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000565A3BF3D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBB03F7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBB03F7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBB03F7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBB03F7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F1C41D5EB8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bullet Ricochet 2', format=5, channels=2, frequency=48000, lengthbytes=2624, lengthpcm=21823, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.284539.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1322240
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 18944
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000565A3BF3D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBB03F7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBB03F7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBB03F7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBB03F7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F1C41D5EB8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bullet Ricochet 3', format=5, channels=2, frequency=48000, lengthbytes=6336, lengthpcm=31118, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.531437.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1322240
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 18944
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000565A3BF3D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBB03F7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBB03F7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBB03F7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBB03F7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F0DD253B68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Blood Splatter 4', format=5, channels=2, frequency=48000, lengthbytes=5760, lengthpcm=22040, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.787091.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1322240
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 18944
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000565A3BF3D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBB03F7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBB03F7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBB03F7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBB03F7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F0DD253B68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Blood Splatter 1', format=5, channels=2, frequency=48000, lengthbytes=6176, lengthpcm=21261, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.874099.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1322240
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 18944
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000565A3BF3D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBB03F7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBB03F7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBB03F7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBB03F7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F0DD253B68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Blood Splatter 2', format=5, channels=2, frequency=48000, lengthbytes=6976, lengthpcm=24097, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.857341.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1322240
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 18944
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000565A3BF3D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBB03F7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBB03F7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBB03F7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBB03F7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F0DD253B68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Blood Splatter 3', format=5, channels=2, frequency=48000, lengthbytes=8192, lengthpcm=30506, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.793415.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1322240
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 18944
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000565A3BF3D8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBB03F7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBB03F7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBB03F7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBB03F7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F0DD253B68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Menu Hover', format=5, channels=2, frequency=48000, lengthbytes=1472, lengthpcm=6106, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.313843.
+[LOG] SoundI::release                          :  (000001F1C766B1E8)
+[LOG] SoundI::release                          :     Blood Splatter 1 (000001F1C7A26D08)
+[LOG] SoundI::release                          :  (000001F1C766B7A8)
+[LOG] SoundI::release                          :     Blood Splatter 2 (000001F1C7A25988)
+[LOG] SoundI::release                          :  (000001F1C766B358)
+[LOG] SoundI::release                          :     Blood Splatter 3 (000001F1C7A26EA8)
+[LOG] SoundI::release                          :  (000001F1C766B638)
+[LOG] SoundI::release                          :     Blood Splatter 4 (000001F1C7A269C8)
+[LOG] SoundI::release                          :  (000001F1D3A7F678)
+[LOG] SoundI::release                          :     Bullet Ricochet 1 (000001F1F68E7758)
+[LOG] SoundI::release                          :  (000001F1D3A7EF48)
+[LOG] SoundI::release                          :     Bullet Ricochet 2 (000001F1F68E7A98)
+[LOG] SoundI::release                          :  (000001F1D3A7FF18)
+[LOG] SoundI::release                          :     Bullet Ricochet 3 (000001F1F68E6718)
+[LOG] SoundI::release                          :  (000001F1D3A7FDA8)
+[LOG] SoundI::release                          :     Bullet Ricochet 4 (000001F1F68E6578)
+[LOG] SoundI::release                          :  (000001F13DB46938)
+[LOG] SoundI::release                          :     Menu Hover (000001F1C7A26008)
+[LOG] SoundI::release                          :  (000001F1D2D903F8)
+[LOG] SoundI::release                          :     Door Unlocked-Open (000001F1C7A25648)
+[LOG] SoundI::release                          :  (000001F1D2D90C98)
+[LOG] SoundI::release                          :     Door Locked (000001F1C7A26B68)
+[LOG] SoundI::release                          :  (000001F1C766B078)
+[LOG] SoundI::release                          :     163439__under7dude__zombie-2 (000001F1C7A257E8)
+[LOG] SoundI::release                          :  (000001F1C766B918)
+[LOG] SoundI::release                          :     445983__breviceps__zombie-gargles (000001F1C7A261A8)
+[LOG] SoundI::release                          :  (000001F1D2D906D8)
+[LOG] SoundI::release                          :     555414__tonsil5__zombie-growl-3 (000001F1C7A25B28)
+[LOG] SoundI::release                          :  (000001F1D3A7E6A8)
+[LOG] SoundI::release                          :     369781__morganpurkis__silenced-gunshot (000001F1F68E63D8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -50,3 +216,7 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)

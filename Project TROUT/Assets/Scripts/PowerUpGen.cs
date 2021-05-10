@@ -5,7 +5,7 @@ using UnityEngine;
 public class PowerUpGen : MonoBehaviour
 {
     // Start is called before the first frame update
-    private float percentage = 20;
+    private float percentage = 5;
     public List<GameObject> powerUpList;
     void Start()
     {

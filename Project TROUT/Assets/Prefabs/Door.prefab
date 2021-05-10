@@ -107,4 +107,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsCost: 500
-  gameManager: {fileID: 0}
+  newSpawnLocations: []
+  playerNearDoor: 0

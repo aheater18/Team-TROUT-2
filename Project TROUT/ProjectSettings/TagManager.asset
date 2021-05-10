@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Enemy
   - ShowOnPause
+  - LeftRoomRespawn
+  - RightRoomRespawn
+  - FinalRoomRespawn
+  - BottomRoomRespawn
+  - UnlockText
+  - Door
+  - HideOnUnpause
   layers:
   - Default
   - TransparentFX

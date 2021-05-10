@@ -7,6 +7,7 @@ public class Paused : MonoBehaviour
     // Start is called before the first frame update
 
     GameObject[] pausedObjects;
+    [SerializeField] GameObject[] subMenus;
 
     void Start()
     {
@@ -32,11 +33,17 @@ public class Paused : MonoBehaviour
 
     public void hidePaused()
     {
+        foreach (GameObject g in subMenus)
+        {
+            g.SetActive(false);
+        }
         foreach (GameObject g in pausedObjects)
         {
             g.SetActive(false);
         }
         Time.timeScale = 1.0f;
+        if(GetComponent<AudioSettings>())
+            GetComponent<AudioSettings>().Pause = false;
     }
 
     public void showPaused()
@@ -46,5 +53,7 @@ public class Paused : MonoBehaviour
             g.SetActive(true);
         }
         Time.timeScale = 0;
+        if (GetComponent<AudioSettings>())
+            GetComponent<AudioSettings>().Pause = true;
     }
 }
